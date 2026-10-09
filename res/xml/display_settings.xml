@@ -57,7 +57,6 @@
             android:title="@string/reduce_bright_colors_preference_title"
             settings:keywords="@string/keywords_reduce_bright_colors"
             settings:controller="com.android.settings.accessibility.ReduceBrightColorsPreferenceController"/>
-
     </PreferenceCategory>
 
     <PreferenceCategory
@@ -103,13 +102,7 @@
             android:fragment="com.android.settings.display.ScreenTimeoutSettings"
             settings:controller="com.android.settings.display.ScreenTimeoutPreferenceController"/>
 
-        <org.evolution.settings.preferences.SystemSettingSwitchPreference
-            android:key="pocket_judge"
-            android:title="@string/proximity_wake_title"
-            android:summary="@string/proximity_wake_summary"
-            settings:requiresConfig="@*android:bool/config_pocketModeSupported" />
-
-        <org.evolution.settings.preferences.DeviceConfigSwitchPreference
+        <org.alch3my.settings.preferences.DeviceConfigSwitchPreference
             android:key="flip_to_screen_off"
             android:title="@string/face_down_sleep_title"
             android:summary="@string/face_down_sleep_summary"
@@ -241,8 +234,8 @@
         <Preference
             android:key="screen_refresh_rate"
             android:title="@string/screen_refresh_rate_title"
-            android:fragment="org.evolution.settings.display.refreshrate.ScreenRefreshRateFragment"
-            settings:controller="org.evolution.settings.display.refreshrate.ScreenRefreshRateController"/>
+            android:fragment="org.alch3my.settings.display.refreshrate.ScreenRefreshRateFragment"
+            settings:controller="org.alch3my.settings.display.refreshrate.ScreenRefreshRateController"/>
 
         <!--<ListPreference
             android:key="max_refresh_rate"
@@ -267,14 +260,9 @@
             android:title="@string/show_operator_name_title"
             android:summary="@string/show_operator_name_summary"/>
 
-        <ListPreference
-            android:key="display_cutout_emulation"
-            android:title="@string/display_cutout_emulation"
-            settings:keywords="@string/display_cutout_emulation_keywords" />
-
-        <lineageos.preference.LineagePartsPreference
+        <!--<lineageos.preference.LineagePartsPreference
             android:key="long_screen_settings"
-            settings:requiresConfig="@*lineageos.platform:bool/config_haveHigherAspectRatioScreen" />
+            settings:requiresConfig="@*lineageos.platform:bool/config_haveHigherAspectRatioScreen" />-->
 
         <SwitchPreferenceCompat
             android:key="camera_gesture"
@@ -290,12 +278,6 @@
             android:title="@string/window_blurs"
             android:fragment="com.android.settings.display.BlurSettings"
             settings:controller="com.android.settings.display.BlurSettingsPreferenceController" />
-
-        <Preference
-            android:key="vehicle_motion_cues"
-            android:title="@string/vehicle_motion_cues_title"
-            android:summary="@string/vehicle_motion_cues_summary"
-            android:fragment="com.android.settings.display.VehicleMotionCuesSettings" />
 
         <SwitchPreferenceCompat
             android:key="tap_to_wake"
