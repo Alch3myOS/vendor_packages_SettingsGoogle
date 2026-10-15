@@ -158,7 +158,7 @@ public class SetupSystemLocalePickerActivity extends Activity {
         SetupLocalePickerListController controller =
                 new SetupLocalePickerListController(getApplicationContext(), this, null, false);
         controller.setLocaleSelectedListener(localeSelectedListener);
-        String psku = getIntent().getExtras().getString("extra_psku");
+        String psku = getIntent().getStringExtra("extra_psku");
         if (psku == null) {
             Log.d("SetupSystemLocalePickerActivity", "No suggested PSKU");
             psku = "";
