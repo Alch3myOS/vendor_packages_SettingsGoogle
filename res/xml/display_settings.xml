@@ -134,12 +134,6 @@
             settings:controller="com.android.settings.accessibility.TextReadingFragmentForDisplaySettingsController"/>
 
         <Preference
-            android:key="gesture_system_navigation_input_summary"
-            android:title="@string/system_navigation_title"
-            android:fragment="com.android.settings.gestures.SystemNavigationGestureSettings"
-            settings:controller="com.android.settings.gestures.SystemNavigationPreferenceController"/>
-
-        <Preference
             android:key="screensaver"
             android:title="@string/screensaver_settings_title"
             android:fragment="com.android.settings.dream.DreamSettings"
